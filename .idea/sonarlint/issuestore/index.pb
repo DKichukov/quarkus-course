@@ -49,3 +49,15 @@ E
 vintage-store/pom.xml,e\2\e224f641c0475c216b9ea9c875db04f0b382eff3
 i
 9artist/src/main/java/org/agoncal/quarkus/jdbc/Artist.java,7\a\7a5c09ad2ffa738de3ce11b2d2859dc4e5868121
+e
+5artist/src/main/test/resources/application.properties,5\7\57bd67df8c8f71afd924d7b9ce2f37b93da4a951
+X
+(artist/src/main/docker/Dockerfile.native,d\6\d6884e6c994df12e508998af0b6634c0f9502468
+^
+.artist/src/main/docker/Dockerfile.native-micro,8\3\839dd6a1e16450c843309f10206f17a215a1925f
+K
+vintage-store/.dockerignore,d\c\dc6991aade4d7f81b1637b1a103a68e4d68cd725
+Š
+Zvintage-store/src/main/java/org/agoncal/quarkus/panache/repository/CustomerRepository.java,2\7\276c7f7b978308d533751cd1f11f53c12905d476
+Ž
+^vintage-store/src/test/java/org/agoncal/quarkus/panache/repository/CustomerRepositoryTest.java,6\1\610bf15f1083b5ee555649183dfe668bfc3059ae
