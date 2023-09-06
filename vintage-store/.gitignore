@@ -13,7 +13,7 @@ release.properties
 bin/
 
 # IntelliJ
-*.idea\sonarlint\*.*
+.idel/sonarlint/
 .idea
 *.ipr
 *.iml
