@@ -14,7 +14,7 @@ bin/
 
 # IntelliJ
 .idea
-.idel/sonarlint/
+.idea/sonarlint/*
 *.ipr
 *.iml
 *.iws
