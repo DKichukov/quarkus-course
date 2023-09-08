@@ -9,17 +9,26 @@ import java.time.Instant;
 
 @Entity
 @Table(name = "t_items")
-@Inheritance(strategy = InheritanceType.JOINED)
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class Item extends PanacheEntity {
+
+    // ======================================
+    // =             Attributes             =
+    // ======================================
+
     @Column(length = 100, nullable = false)
     public String title;
-    @Column(length = 300, nullable = false)
+
+    @Column(length = 3000)
     public String description;
+
     @Column(nullable = false)
     public BigDecimal price;
-    @Column(name = "created_date", nullable = false)
-    public Instant createDate = Instant.now();
-    @ManyToOne
+
+    @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "artist_fk")
     public Artist artist;
+
+    @Column(name = "created_date", nullable = false)
+    public Instant createdDate = Instant.now();
 }

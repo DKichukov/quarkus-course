@@ -48,7 +48,7 @@ class PurchaseOrderRepositoryTest {
         //Create a Purchase Order
         PurchaseOrder purchaseOrder = new PurchaseOrder();
         purchaseOrder.customer = customer;
-        purchaseOrder.addOrderLines(orderLine);
+        purchaseOrder.addOrderLine(orderLine);
 
         PurchaseOrder.persist(purchaseOrder);
     }
