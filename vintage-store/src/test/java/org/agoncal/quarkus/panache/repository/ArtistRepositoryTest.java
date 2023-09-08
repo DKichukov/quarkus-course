@@ -20,7 +20,7 @@ class ArtistRepositoryTest {
         long count = artistRepository.count();
         int listAll = artistRepository.listAll().size();
         assertEquals(count,listAll);
-        assertEquals(artistRepository.listAllArtistSorted().size(),listAll);
+        assertEquals(artistRepository.listAllArtistsSorted().size(),listAll);
 
         Artist artist = new Artist("name", "bio");
 

@@ -7,12 +7,10 @@ import org.agoncal.quarkus.jdbc.Artist;
 
 import java.util.List;
 
-
 @ApplicationScoped
 public class ArtistRepository implements PanacheRepository<Artist> {
 
-    public List<Artist> listAllArtistSorted() {
-        return listAll(Sort.descending("name"));
-
-    }
+  public List<Artist> listAllArtistsSorted() {
+    return listAll(Sort.descending("name"));
+  }
 }

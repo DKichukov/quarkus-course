@@ -7,12 +7,10 @@ import org.agoncal.quarkus.jpa.Customer;
 
 import java.util.List;
 
-
 @ApplicationScoped
 public class CustomerRepository implements PanacheRepository<Customer> {
 
-    public List<Customer> listAllDans() {
-        return list("firstName='Dan'", Sort.by("lastName"));
-    }
-
+  public List<Customer> listAllDans() {
+    return list("firstName = 'Dan'", Sort.by("lastName"));
+  }
 }
